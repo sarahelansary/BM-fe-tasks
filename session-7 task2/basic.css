@@ -1,0 +1,67 @@
+.nav {
+  position: absolute;
+  top: 17;
+  right: 0;
+  padding: 10px;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.nav ul li {
+  display: inline;
+  margin: 0 15px;
+  color: rgb(128, 128, 128);
+  font-weight: bold;
+}
+.container {
+  background-color: rgb(236, 110, 56);
+
+  color: azure;
+}
+#bluep {
+  color: rgba(3, 151, 210, 0.892);
+}
+.container div {
+  padding-left: 20px;
+}
+#description {
+  width: 400px;
+  height: 40px;
+}
+
+.container button {
+  background-color: rgb(236, 110, 56);
+  color: azure;
+  border-radius: 0mm;
+  border-color: azure;
+  padding: 15px 32px;
+  text-align: center;
+  color: azure;
+}
+#image {
+  display: inline-block;
+  position: relative;
+  margin-left: 600px;
+  top: -50px;
+}
+
+#image img {
+  width: 300px;
+  border: none;
+}
+.second {
+  width: 600px;
+  height: 40px;
+}
+.second p {
+  font-size: small;
+}
+#image2 {
+  display: inline-block;
+  position: relative;
+  margin-left: 700px;
+  top: -200px;
+}
