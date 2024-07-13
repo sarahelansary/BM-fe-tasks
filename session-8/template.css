@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+a {
+  padding: 14px 17px;
+}
+
+.navlist {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 1%;
+  border-radius: 2px;
+  box-shadow: 0 0 10px;
+  margin: 0;
+  z-index: 1000;
+  top: 0;
+
+  background-color: white;
+}
+
+.navitem:first-child {
+  margin-right: auto;
+}
+.navitem a:hover {
+  background-color: rgba(128, 128, 128, 0.295);
+}
+.home {
+  position: relative;
+}
+
+/* Bottom right text */
+#text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: xx-large;
+}
+#br {
+  padding: 30px;
+  background-color: hsla(0, 0%, 1%, 0.456);
+}
+#projects {
+  margin: 0;
+  padding: 60px 5%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
+  font-weight: 100;
+}
+.pimages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  padding: 10px;
+  max-width: 300px;
+}
+.image-container img {
+  width: 100%;
+}
+.image-container .text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 15px;
+  color: white;
+  background-color: rgb(3, 3, 3);
+}
+#about {
+  margin: 0;
+  padding: 60px 5%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+.teamimages {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  position: relative;
+  max-width: 240px;
+  padding: 10px;
+}
+.container img {
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgba(128, 128, 128, 0.295);
+}
+
+button {
+  padding: 10px 70px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.role {
+  color: rgba(128, 128, 128, 0.555);
+  font-size: large;
+}
+
+#contacts {
+  margin: 0px;
+  padding: 60px 5%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+#submit {
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+#submit:hover {
+  background-color: rgba(128, 128, 128, 0.555);
+}
+input {
+  width: 100%;
+  margin: 10 20px;
+  height: 40px;
+}
+#footer {
+  border-radius: 2px;
+  box-shadow: 0 0 10px;
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+#foot {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: underline;
+}
