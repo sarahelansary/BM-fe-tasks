@@ -1,0 +1,32 @@
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  padding: 50px;
+}
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+span i {
+  width: 100%;
+}
+nav {
+  width: 120px;
+  background: #222;
+}
+
+#main {
+  margin-left: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
