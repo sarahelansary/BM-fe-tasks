@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="carousel.css" />
+  <body>
+    <div class="container">
+      <div class="slide">
+        <h2>first</h2>
+      </div>
+
+      <div class="slide">
+        <h2>second</h2>
+      </div>
+
+      <div class="slide">
+        <h2>third</h2>
+      </div>
+      <a class="prev" onclick="prev(-1)">&#10094;</a>
+      <a class="next" onclick="next(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </body>
+  <script src="carousel.js"></script>
+</html>
