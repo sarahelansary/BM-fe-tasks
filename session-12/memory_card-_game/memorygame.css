@@ -78,7 +78,7 @@ section {
 }
 
 .toggle {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .matched {
   opacity: 0;
