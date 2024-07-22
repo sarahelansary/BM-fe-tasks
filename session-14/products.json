@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "shampoo",
+    "img": "assets/OIP.jpeg",
+    "price": "75egp",
+    "category ": "selfcare"
+  },
+
+  {
+    "id": 2,
+    "name": "perfume",
+    "img": "assets/perfume.jpeg",
+    "price": "205egp",
+    "category ": "selfcare"
+  },
+  {
+    "id": 3,
+    "name": "t-shirt",
+    "img": "assets/t-shirt.jpeg",
+    "price": "300egp",
+    "category ": "clothes"
+  },
+  {
+    "id": 4,
+    "name": "book",
+    "img": "assets/book.jpeg",
+    "price": "80egp",
+    "category ": "books"
+  }
+]
