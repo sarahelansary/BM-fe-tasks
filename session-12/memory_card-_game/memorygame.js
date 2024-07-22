@@ -88,23 +88,29 @@ const checkCards = (e) => {
   }
   if (remainingCards === 0) {
     window.alert("You Won!");
-    section.style.pointerEvents = "none";
+    // section.style.pointerEvents = "none";
   }
 };
-
 function reset() {
   const shuffledArray = randSort();
   const fronts = document.querySelectorAll(".front");
   const cards = document.querySelectorAll(".card");
 
-  section.style.pointerEvents = "none";
+  section.style.pointerEvents = "none"; // Disable clicks while resetting
+
   shuffledArray.forEach((item, i) => {
-    cards[i].classList.remove("toggle");
-    cards[i].style.pointerEvents = "all";
-    fronts[i].src = item.img;
-    cards[i].setAttribute("name", item.name);
+    cards[i].classList.remove("toggle"); // Remove toggle class
+    cards[i].classList.remove("flipped"); // Remove flipped class (if any)
+    cards[i].style.pointerEvents = "all"; // Enable clicks again
+    fronts[i].src = item.img; // Update image source
+    cards[i].setAttribute("name", item.name); // Update card name
   });
-  section.style.pointerEvents = "all";
+
+  clickCount = 0; // Reset click count
+  clearTimeout(firstCardTimeout); // Clear any pending timeouts
+
+  section.style.pointerEvents = "all"; // Enable clicks on the section
+  remainingCards = cardArray.length; // Reset remaining cards counter
 }
 
 const resetBtn = document.querySelector("#resetBtn");
