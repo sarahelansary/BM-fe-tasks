@@ -1,0 +1,12 @@
+<h1>Hello, {{ title }}</h1>
+<input type="text" [(ngModel)]="inputTitle" placeholder="Enter task title" />
+<input
+  type="text"
+  [(ngModel)]="inputDescription"
+  placeholder="Enter task description"
+/>
+<button (click)="addItem()">
+  {{ editingIndex === null ? "Add Task" : "Save Task" }}
+</button>
+
+<app-test [tasks]="tasks" (taskEdited)="onTaskEdited($event)"></app-test>
